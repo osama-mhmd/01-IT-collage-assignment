@@ -9,7 +9,7 @@ if (topNav) {
         .map((el) => {
           return `<li ${
             `/${el}.html` === pathname ? "class='active'" : ""
-          }><a href="/${el}.html">${el.replaceAll("-", " ")}</a></li>`;
+          }><a href="./${el}.html">${el.replaceAll("-", " ")}</a></li>`;
         })
         .join("")}
     </ul>
