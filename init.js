@@ -8,7 +8,7 @@ if (topNav) {
       ${urls
         .map((el) => {
           return `<li ${
-            `/${el}.html` === pathname ? "class='active'" : ""
+            pathname.includes(el) ? "class='active'" : ""
           }><a href="./${el}.html">${el.replaceAll("-", " ")}</a></li>`;
         })
         .join("")}
