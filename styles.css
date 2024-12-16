@@ -78,6 +78,9 @@ p {
   color: blue;
   text-decoration: underline;
 }
+del {
+  color: #888;
+}
 
 /* Navbar */
 nav#top-nav {
@@ -174,4 +177,8 @@ form {
 .plans > div li.not-me::marker {
   content: "✖  ";
   white-space: pre;
+}
+.plans > div > footer {
+  text-align: end;
+  padding: 1rem 2rem;
 }
